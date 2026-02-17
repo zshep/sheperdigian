@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sheperdigian.com — Projects</title>
+    <title>Sheperdigian.com — Portfolio</title>
     <meta
       name="description"
       content="Projects by Shep Sheperdigian: Bar Time Trivia, Graph-Maker, and Exit Ticket Generator."
@@ -22,10 +22,10 @@
           </div>
         </div>
 
-        <nav class="nav">
-          <a href="#projects">Projects</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+        <nav class="nav" aria-label="primary">
+          <a class="btn" href="#projects">Projects</a>
+          <a class="btn" href="#about">About</a>
+          <a class="btn" href="#contact">Contact</a>
         </nav>
       </header>
 
@@ -52,6 +52,7 @@
           </div>
         </section>
 
+        <!--  Projects   -->
         <section id="projects" class="section">
           <div class="section-head">
             <h3>Projects</h3>
@@ -71,7 +72,7 @@
                 nights.
               </p>
               <div class="card-actions">
-                 <a
+                <a
                   class="btn small primary"
                   href="https://btt.sheperdigian.com/"
                   target="_blank"
@@ -153,7 +154,105 @@
             </article>
           </div>
         </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+          <div class="section-head">
+            <h3>About</h3>
+            <p>
+              Teacher → builder. Practical software for real classrooms and real
+              people.
+            </p>
+          </div>
+
+          <div class="grid">
+            <article class="card">
+              <div class="card-top">
+                <h4>Who I am</h4>
+                <span class="pill">12+ years teaching</span>
+              </div>
+              <p>
+                I’m Shep Sheperdigian. I taught high school science for 12+
+                years—mostly physics—in an urban school with a diverse student
+                population. Teaching a “hard subject” to real humans taught me
+                how to break down complexity, build clear storylines, and design
+                systems that help people succeed.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <h4>What I build</h4>
+                <span class="pill">Clean UX • Fast workflows</span>
+              </div>
+              <p>
+                I build small, focused tools that reduce friction: live
+                formative checks, quick content creation, and simple dashboards
+                that make student thinking visible without creating more work. I
+                care about speed, clarity, and shipping useful features.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <h4>What I’m aiming for</h4>
+                <span class="pill">EdTech • Product-minded</span>
+              </div>
+              <p>
+                I want to work with a team building education software that’s
+                grounded in real classroom constraints and learning best
+                practices—tools that help both students and teachers.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+          <div class="section-head">
+            <h3>Contact</h3>
+            <p>Want to chat, collaborate, or give feedback on a project?</p>
+          </div>
+
+          <article class="card wide">
+            <div class="card-top">
+              <h4>Reach me</h4>
+              <span class="pill">Email</span>
+            </div>
+
+            <p>
+              The fastest way to reach me is email. I’m especially interested in
+              roles and projects in education software, classroom tooling, and
+              real-time web apps.
+            </p>
+
+            <div class="card-actions">
+              <a class="btn small primary" href="mailto:zsheperdigian@gmail.com"
+                >Email me</a
+              >
+              <a
+                class="btn small"
+                href="https://github.com/zshep"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub</a
+              >
+            </div>
+
+            <div class="note">
+              If you're reaching out about a job or collaboration, include a
+              link to the role/project and what you’re hoping I can help with.
+            </div>
+          </article>
+        </section>
       </main>
+      <footer class="footer">
+        © <span id="year"></span> Shep Sheperdigian · Built with HTML/CSS ·
+        Hosted on GitHub Pages
+      </footer>
     </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>

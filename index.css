@@ -15,7 +15,10 @@
   box-sizing: border-box;
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100%;
 }
@@ -93,6 +96,18 @@ h1 {
   font-size: 14px;
 }
 
+.nav .btn {
+  padding: 8px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.nav .btn:hover {
+  color: var(--text);
+}
+
 .hero {
   padding: 28px 18px;
   border: 1px solid var(--border);
@@ -121,6 +136,7 @@ h1 {
 
 .section {
   margin-top: 26px;
+  scroll-margin-top: 16px;
 }
 
 .section-head {
