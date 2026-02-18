@@ -69,71 +69,83 @@
         <hr />
 
         <!-- ETG-->
-        <section id="etg" class="project-detail">
-             <h3>Exit Ticket Generator</h3>
-          <p><a href="https://etg.sheperdigian.com/" target="_blank">Live Demo</a> • 
-             <a href="https://github.com/zshep/exit-ticket-generator" target="_blank">Repo</a></p>
+       <section id="etg" class="project-detail">
+          <h3>Exit Ticket Generator</h3>
+          <p>
+            <a href="https://etg.sheperdigian.com/" target="_blank">Live Demo</a> •
+            <a href="https://github.com/zshep/exit-ticket-generator" target="_blank">Repo</a>
+          </p>
 
           <h4>Problem</h4>
           <p>
-           
+            End-of-lesson formative assessments often require paper collection,
+            manual sorting, and delayed feedback, making it difficult to quickly
+            gauge student understanding during a lesson.
           </p>
 
           <h4>Solution</h4>
           <p>
-            
+            Built a lightweight formative assessment tool using React and Firebase
+            that allows teachers to create and publish live multiple-choice or short-response
+            questions. Students submit responses (with confidence ratings), and teachers
+            can view results in real time and review historical submissions.
           </p>
 
           <h4>Technical Highlights</h4>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Public/private Firestore document separation to prevent answer leakage</li>
+            <li>Subcollection structure for ticket-scoped student submissions</li>
+            <li>Firebase Anonymous Authentication for teacher session control</li>
+            <li>Real-time updates using Firestore onSnapshot listeners</li>
           </ul>
 
           <h4>Next Iteration</h4>
           <ul>
-            <li></li>
-            <li></li>
+            <li>Persistent teacher accounts with role-based authentication</li>
+            <li>Grouping questions by student learning targets or standards</li>
           </ul>
-
         </section>
+
 
         <hr />
 
         <!-- Graph-Maker -->
 
         <section id="gm" class="project-detail">
-             <h3>Graph Maker</h3>
-          <p><a href="https://gm.sheperdigian.com/" target="_blank">Live Demo</a> • 
-             <a href="https://github.com/zshep/graph-maker" target="_blank">Repo</a></p>
+          <h3>Graph Maker</h3>
+          <p>
+            <a href="https://gm.sheperdigian.com/" target="_blank">Live Demo</a> •
+            <a href="https://github.com/zshep/graph-maker" target="_blank">Repo</a>
+          </p>
 
           <h4>Problem</h4>
           <p>
-           
+            Creating clean, customizable graphs for classroom activities often requires
+            manual formatting in external tools, consuming instructional planning time.
           </p>
 
           <h4>Solution</h4>
           <p>
-            
+            Built a lightweight, frontend-only graphing tool using React that allows
+            teachers to generate up to four-quadrant coordinate grids, customize axis
+            labels, and plot points or segments for instructional use.
           </p>
 
           <h4>Technical Highlights</h4>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Canvas-based rendering driven by React state</li>
+            <li>LocalStorage persistence for saving graph presets</li>
+            <li>Stateless frontend architecture (no backend dependency)</li>
+            <li>Custom subdomain deployment via Cloudflare Pages</li>
           </ul>
 
           <h4>Next Iteration</h4>
           <ul>
-            <li></li>
-            <li></li>
+            <li>Export graphs as downloadable images (PNG)</li>
+            <li>Smoother rendering for non-linear segments and curves</li>
           </ul>
-
         </section>
+
         
     <hr />
 
