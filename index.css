@@ -267,6 +267,11 @@ h1 {
   color: rgba(255, 255, 255, 0.18);
 }
 
+.more-projects {
+  margin-top: 2rem;
+  text-align: center;
+}
+
 .footer {
   margin-top: 26px;
   padding: 14px 4px 0;
