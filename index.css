@@ -91,13 +91,14 @@ h1 {
 .nav {
   display: flex;
   gap: 14px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   justify-content: flex-end;
   color: var(--muted);
   font-size: 14px;
 }
 
 .nav .btn {
+  display: block;
   padding: 8px 10px;
   border-radius: 12px;
   font-size: 13px;
@@ -108,6 +109,7 @@ h1 {
 .nav .btn:hover {
   color: var(--text);
 }
+
 
 .hero {
   padding: 28px 18px;
@@ -327,5 +329,35 @@ h1 {
   .hero-image img {
     width: 150px;
     height: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .brand {
+    justify-content: flex-start;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .nav .btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 12px;
   }
 }
