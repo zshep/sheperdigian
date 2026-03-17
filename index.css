@@ -235,6 +235,17 @@ h1 {
   flex-wrap: wrap;
 }
 
+.try-blurb {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.try-blurb strong {
+  color: #66BB6A;  
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
